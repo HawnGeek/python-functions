@@ -64,6 +64,7 @@ def multiply(num_1, num_2):
 multiply(box_1, box_2)
 
 product = multiply(box_1, box_2)
+
 print(product)
 
 
@@ -81,8 +82,6 @@ divide(box_1, box_2)
 quotient = divide(box_1, box_2)
 print(quotient)
 
-
-
 #6
 #Function - check_sum
 #Create a function named `check_sum` which will take a parameter: `x`.
@@ -90,6 +89,11 @@ print(quotient)
 
 #Print the da_diva variable to see your result.
 
+def check_sum(x):
+    return 'Mariah Carey has been married ' + str(x) + ' years'
+# because 'check_sum(is_string)' when I replaced x with an integer, I had to switch it to a string
+da_diva = check_sum(sum)
+print(da_diva)
 
 #7
 #Function - check_difference
@@ -99,6 +103,12 @@ print(quotient)
 
 #Print the loving_it variable to see your result.
 
+def check_difference(x):
+    return 'Last night I dreamt that I ate ' + str(x) + ' Big Macs.'
+# because 'check_sum(is_string)' when I replaced x with an integer, I had to switch it to a string
+Loving_it = check_difference(abs(difference))
+# had to add the 'abs()' in to flip the negative integer
+print(Loving_it)
 
 #8
 #Function - check_product
@@ -106,12 +116,25 @@ print(quotient)
 
 #This function will multiply the values stored in the sum and product variables. Invoke this function and print your result.
 
+def check_product():
+    return sum * product
+#check_product()
+
+print(check_product())
+
 
 #9
 #Function - check_quotient
 #Create a function named `check_quotient` which does not require any parameters.
 
 #This function will multiply the values stored in the product and quotient variables. Invoke this function and print your result.
+
+def check_quotient():
+    return product * quotient
+#check_quotient()
+
+print(check_quotient())
+
 
 
 #10
@@ -122,6 +145,15 @@ print(quotient)
 
 #Print the my_full_name variable to see your result.
 
+first_name = 'Eric'
+last_name = 'Daley'
+
+def create_full_name(fname, lname):
+    return "My full name is " + fname + " " + lname + "."
+create_full_name(first_name, last_name)
+
+my_full_name = create_full_name(first_name, last_name)
+print(my_full_name)
 
 
 
