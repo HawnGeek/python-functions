@@ -31,12 +31,22 @@ sum = add(box_1, box_2)
 print(sum)
 
 
-
 #3
 #Function - subtract
 #Create a function named `subtract` which will take two parameters: `num_1` and `num_2`.
 
 #This function will subtract two numbers and return the difference of these two numbers. Invoke the function and assign it to a variable named `difference`.
+
+def subtract(num_1, num_2):
+    return num_1 - num_2
+subtract(box_1, box_2)
+
+difference = subtract(box_1, box_2)
+print(difference)
+# because my box_2 is larger than box_1, it resulted in a negative integer
+print(abs(difference))
+# added "abs()" to return the absolute value of the operation and remove the negative
+
 
 #Print the difference variable to see your result.
 
@@ -49,6 +59,13 @@ print(sum)
 
 #Print the product variable to see your result.
 
+def multiply(num_1, num_2):
+    return num_1 * num_2
+multiply(box_1, box_2)
+
+product = multiply(box_1, box_2)
+print(product)
+
 
 #5
 #Function - divide
@@ -56,6 +73,14 @@ print(sum)
 #This function will divide two numbers and return the quotient of these two numbers. Invoke the function and assign it to a variable named `quotient`.
 
 #Print the quotient variable to see your result.
+
+def divide(num_1, num_2):
+    return num_1 / num_2
+divide(box_1, box_2)
+
+quotient = divide(box_1, box_2)
+print(quotient)
+
 
 
 #6
